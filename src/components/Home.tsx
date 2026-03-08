@@ -84,16 +84,16 @@ const Home: React.FC = () => {
         <h2 className="section-title section-title-biography">Biography</h2>
         <div className="space-y-4 text-primary-800 dark:text-primary-200">
           <p>
-            [Your Name] is an Associate Professor at the <span className="highlight">Your School, Your University</span>, 
+            I am an Associate Professor at the <span className="highlight">School of Statistics, University of Minnesota</span>, 
             with graduate faculty appointments in <span className="highlight">Electrical Engineering</span> and 
             <span className="highlight"> Computer Science</span>, the <span className="highlight">Data Science Program</span>, 
             and is a core faculty member of the <a 
-              href="https://your-lab-hub.example.com/" 
+              href="https://dsai-hub.umn.edu/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="highlight hover:opacity-80 transition-opacity"
             >Data Science and AI Hub</a>. 
-            [Your Name] was honored to be an Amazon Scholar with the Amazon AGI Team, focusing on foundation model training and post-training techniques. Additionally, I am a cofounder of <a 
+            I was honored to be an Amazon Scholar with the Amazon AGI Team, focusing on foundation model training and post-training techniques. Additionally, I am a cofounder of <a 
               href="https://morphmind.ai" 
               target="_blank" 
               rel="noopener noreferrer"
@@ -101,18 +101,18 @@ const Home: React.FC = () => {
             >MorphMind</a>, an AI platform to automate R&D workflows for domain professionals.
           </p>
           <p>
-            [Your Name] developed a new course <strong>STAT 8931 - Generative AI</strong>, including both theoretical and hands-on experience 
+            I developed a new course <strong>STAT 8931 - Generative AI</strong>, including both theoretical and hands-on experience 
             in large language model training and deployment, for PhD students in Stat, EE, and CS. 
             Visit <a
-              href="https://your-course-website.example.com"
+              href="https://genai-course.jding.org"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gradient-to-r from-purple-600 via-pink-500 to-orange-500 dark:from-purple-400 dark:via-pink-400 dark:to-orange-400 bg-clip-text text-transparent hover:opacity-80 transition-opacity"
-            >https://your-course-website.example.com</a> for my open-source course materials.
+            >https://genai-course.jding.org</a> for my open-source course materials.
           </p>
             
           <p>
-            The research is at the intersection of artificial intelligence, statistics, and scientific computing. [Your Name] joined [Your University] in [Year] and got early tenure promotion in September 2023. Before that, I received a Ph.D. in Engineering Sciences from <span className="highlight">[PhD University]</span> in 2017 and worked as a post-doctoral fellow at <span className="highlight">[Postdoc University]</span> in 2018. I obtained a B.S. degree from <span className="highlight">[Undergraduate University]</span>, where I was selected in the Math &amp; Physics Academic Talent Program (2008-2010) and also enrolled in the Electrical Engineering program (2010-2012).
+            My research is at the intersection of artificial intelligence, statistics, and scientific computing. I joined the University of Minnesota in September 2018 and got early tenure promotion in September 2023. Before that, I received a Ph.D. in Engineering Sciences from <span className="highlight">Harvard University</span> in 2017 and worked as a post-doctoral fellow at <span className="highlight">Duke University</span> in 2018. I obtained a B.S. degree from <span className="highlight">Tsinghua University</span>, where I was selected in the Math &amp; Physics Academic Talent Program (2008-2010) and also enrolled in the Electrical Engineering program (2010-2012).
           </p>
         </div>
       </section>
@@ -122,10 +122,10 @@ const Home: React.FC = () => {
         <h2 className="section-title section-title-research">Research Interests</h2>
         <div className="space-y-4 text-primary-800 dark:text-primary-200">
           <p>
-            [Your Name] likes to formulate and address novel research problems that are often inspired by foundational thoughts in statistics, information theory, signal processing, and optimization. I address those research problems often by establishing new mathematical models, using asymptotic statistics and probability theory, and performing real-world data studies.
+            I like to formulate and address novel research problems that are often inspired by foundational thoughts in statistics, information theory, signal processing, and optimization. I address those research problems often by establishing new mathematical models, using asymptotic statistics and probability theory, and performing real-world data studies.
           </p>
           <p>
-            As AI rapidly transitions from research labs to a broad spectrum of disciplines and industries, the research focuses on the following interconnected directions:
+            As AI rapidly transitions from research labs to a broad spectrum of disciplines and industries, my research focuses on the following interconnected directions:
           </p>
           <ul className="list-disc pl-6 space-y-2">
             <li>
@@ -242,18 +242,18 @@ const Home: React.FC = () => {
                 As AI tools become increasingly agentic—capable of autonomously planning and executing complex data science workflows—the boundary between what AI can automate and what still requires human expertise is rapidly evolving.
               </p>
               <p>
-                In collaboration with colleagues at the University of Minnesota and partners across Minnesota's industry sectors, [Your Name] leads the <span className="text-section-blue-light dark:text-section-blue-dark">Agentic AI for Data Science Benchmark</span>—a statewide initiative to rigorously evaluate the capabilities and limitations of agent-based AI systems in domain-specific data science tasks. Spanning areas such as healthcare, insurance, retail, energy, and beyond, this benchmark aims to identify where AI excels, where it falls short, and how domain expertise can bridge the gap.
+                In collaboration with colleagues at the University of Minnesota and partners across Minnesota's industry sectors, I lead the <span className="text-section-blue-light dark:text-section-blue-dark">Agentic AI for Data Science Benchmark</span>—a statewide initiative to rigorously evaluate the capabilities and limitations of agent-based AI systems in domain-specific data science tasks. Spanning areas such as healthcare, insurance, retail, energy, and beyond, this benchmark aims to identify where AI excels, where it falls short, and how domain expertise can bridge the gap.
               </p>
               
               <div className="flex items-center space-x-4 mt-6">
                 <a
-                  href="https://your-project-website.example.com"
+                  href="https://agentds.org"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center px-4 py-2 rounded-lg bg-orange-500/10 dark:bg-orange-400/10 text-orange-600 dark:text-orange-400 hover:bg-orange-500/20 dark:hover:bg-orange-400/20 transition-colors"
                 >
                   <span className="mr-2">🔗</span>
-                  Visit Project Website
+                  Visit AgentDS.org
                 </a>
                 <div className="flex items-center space-x-3 text-2xl">
                   <span title="Healthcare">🏥</span>

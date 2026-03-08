@@ -17,51 +17,51 @@ interface Student {
 const Students: React.FC = () => {
   const currentPhD: Student[] = [
     {
-      name: 'PhD Student A',
+      name: 'Xun Xian',
       department: 'Electrical Engineering',
       year: '2020-Present',
       image: '/images/profile/students/xun-xian.png', // Updated to .png
-      coAdvisor: 'Prof. [Co-Advisor Name]',
+      coAdvisor: 'Prof. Mingyi Hong',
       researchTopics: ['Deep Learning', 'AI Safety', 'Multi-Agent Systems'],
-      homepage: 'https://example.com'
+      homepage: 'https://jeremyxianx.github.io'
     },
     {
-      name: 'PhD Student B',
+      name: 'Qi Le',
       department: 'Computer Science',
       year: '2020-Present',
       image: '/images/profile/students/qi-le.png',
-      coAdvisor: 'Prof. [Co-Advisor Name]',
+      coAdvisor: 'Prof. Ali Anwar',
       researchTopics: ['Efficient LLM', 'Model Compression', 'Distributed Learning'],
-      homepage: 'https://example.com'
+      homepage: 'https://qi-le1.github.io/'
     },
     {
-      name: 'PhD Student C',
+      name: 'Jiaying Zhou',
       department: 'Statistics',
       year: '2021-Present',
       image: '/images/profile/students/jiaying-zhou.png',
-      coAdvisor: 'Prof. [Co-Advisor Name]',
+      coAdvisor: 'Prof. Yuhong Yang',
       researchTopics: ['Decentralized Learning', 'Data Privacy'],
       // homepage: 'https://www.linkedin.com/in/jiaying-zhou-9b4493161/'
       // Amazon, Applied Scientist
     },
     {
-      name: 'PhD Student D',
+      name: 'Jin Du',
       department: 'Statistics',
       year: '2021-Present',
       image: '/images/profile/students/jin-du.png',
-      coAdvisor: 'Prof. [Co-Advisor Name]',
+      coAdvisor: 'Prof. Yuhong Yang',
       researchTopics: ['Large Language Models', 'Lifelong Learning', 'AI Agents', 'Statistical Theory'],
     },
     {
-      name: 'PhD Student E',
+      name: 'An Luo',
       department: 'Statistics',
       year: '2022-Present',
       image: '/images/profile/students/an-luo.png',
       researchTopics: ['Watermarking', 'AI Agents'],
-      homepage: 'https://example.com'
+      homepage: 'https://www.linkedin.com/in/an-luo-296868228/'
     },
     {
-      name: 'PhD Student F',
+      name: 'Fangqiao Tian',
       department: 'Statistics',
       year: '2024-Present',
       image: '/images/profile/students/fangqiao-tian.png',
@@ -71,7 +71,7 @@ const Students: React.FC = () => {
 
   const currentMS: Student[] = [
     {
-      name: 'MS Student A',
+      name: 'Harsh Hemant Shah',
       department: 'Statistics',
       year: '2024-Present',
       image: '/images/profile/students/harsh-shah.png',
@@ -81,31 +81,31 @@ const Students: React.FC = () => {
 
   const graduatedAlumni: Student[] = [
     {
-      name: 'Alumni A',
+      name: 'Ganghua Wang',
       department: 'Statistics',
       year: '2024',
       image: '/images/profile/students/ganghua-wang.png', // Updated to .png
       thesis: 'Trustworthy AI in the Modern Era: Theories and Applications',
-      firstPosition: '[First Position]',
-      coAdvisor: 'Prof. [Co-Advisor Name]',
+      firstPosition: 'Postdoctoral Researcher in Data Science at the University of Chicago',
+      coAdvisor: 'Prof. Yuhong Yang',
       degree: 'Ph.D.',
       researchTopics: ['Deep Learning', 'AI Safety', 'Model and Data Privacy', 'Statistical Theory'],
-      homepage: 'https://example.com'
+      homepage: 'https://ganghuawang.github.io'
     },
     {
-      name: 'Alumni B',
+      name: 'Jiawei Zhang',
       department: 'Statistics',
       year: '2023',
       image: '/images/profile/students/jiawei-zhang.png',
       thesis: 'Diagnostics, Cooperation, and Model Selection for Modern Machine Learning',
-      firstPosition: '[First Position]',
-      coAdvisor: 'Prof. [Co-Advisor Name]',
+      firstPosition: 'Assistant Professor in Statistics at the University of Kentucky',
+      coAdvisor: 'Prof. Yuhong Yang',
       degree: 'Ph.D.',
       researchTopics: ['Collaborative Learning', 'Model Selection', 'Model Diagnostics', 'Statistical Theory'],
-      homepage: 'https://example.com'
+      homepage: 'https://jiaweizhang.site'
     },
     {
-      name: 'Alumni C',
+      name: 'Minh Nguyen',
       department: 'Data Science',
       year: '2023',
       // firstPosition: 'Data Scientist at Amazon',
@@ -113,7 +113,7 @@ const Students: React.FC = () => {
       researchTopics: ['Online Learning']
     },
     {
-      name: 'Alumni D',
+      name: 'Sarah Bianchi',
       department: 'Statistics',
       year: '2024',
       // firstPosition: 'Machine Learning Engineer at Google',
@@ -121,14 +121,14 @@ const Students: React.FC = () => {
       researchTopics: ['Retrieval Augmented Generation']
     },
     {
-      name: 'Alumni E',
+      name: 'Yilin Hou',
       department: 'Statistics',
       year: '2020',
       image: '/images/profile/students/yilin-hou.png',
-      firstPosition: '[First Position]',
+      firstPosition: 'Senior Quantitative Anlayst at TD Bank',
       degree: 'M.S.',
       researchTopics: ['Smooth Change Points'],
-      homepage: 'https://example.com'
+      homepage: 'https://www.linkedin.com/in/yilin-hou/'
     }
   ];
 

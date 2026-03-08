@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Mail, MapPin, Linkedin, GraduationCap, X, Calendar } from 'lucide-react';
-import { socialLinks } from '../config/links';
+import { siteConfig } from '../config/site.config';
 
 interface SidebarProps {
   activeTab: string;
@@ -71,14 +71,14 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab }) => {
             }}
           >
             <img 
-              src="/images/profile/placeholder.png" 
-              alt="Professor Your Name" 
+              src={siteConfig.profilePhoto} 
+              alt={siteConfig.name} 
               className="w-full h-full object-cover"
             />
           </div>
-          <h1 className="text-xl font-bold text-primary-900 dark:text-white">Your Name</h1>
+          <h1 className="text-xl font-bold text-primary-900 dark:text-white">{siteConfig.name}</h1>
           <p className="text-sm text-primary-600 dark:text-primary-300 text-center mt-1">
-            Your Title @ Your Institution
+            {siteConfig.title}
           </p>
         </div>
 
@@ -93,7 +93,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab }) => {
               className="mr-2 text-section-blue-light dark:text-section-blue-dark group-hover:scale-110 transition-transform" 
             />
             <span className="group-hover:text-section-blue-light dark:group-hover:text-section-blue-dark transition-colors">
-              Your Office Address
+              {siteConfig.address}
             </span>
           </div>
           
@@ -106,15 +106,15 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab }) => {
                 <X size={16} className="text-primary-600 dark:text-primary-300" />
               </button>
               <img
-                src="/images/profile/placeholder.png"
-                alt="Location Map"
+                src={siteConfig.officeMapImage}
+                alt="Ford Hall Location Map"
                 className="w-full h-48 object-cover"
               />
             </div>
           )}
 
           <a 
-            href="mailto:your@email.com" 
+            href={`mailto:${siteConfig.email}`} 
             className="group flex items-center text-sm text-primary-700 dark:text-primary-300"
           >
             <Mail 
@@ -122,7 +122,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab }) => {
               className="mr-2 text-section-blue-light dark:text-section-blue-dark group-hover:scale-110 transition-transform" 
             />
             <span className="group-hover:text-section-blue-light dark:group-hover:text-section-blue-dark transition-colors">
-              your@email.com
+              {siteConfig.email}
             </span>
           </a>
         </div>
@@ -188,7 +188,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab }) => {
         <div className="mt-auto">
           <div className="flex justify-center space-x-4 mb-4">
             <a
-              href={socialLinks.linkedin}
+              href={siteConfig.social.linkedin}
               target="_blank"
               rel="noopener noreferrer"
               className="text-section-blue-light dark:text-section-blue-dark hover:scale-110 transition-transform"
@@ -197,7 +197,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab }) => {
               <Linkedin size={20} />
             </a>
             <a
-              href={socialLinks.googleScholar}
+              href={siteConfig.social.googleScholar}
               target="_blank"
               rel="noopener noreferrer"
               className="text-section-blue-light dark:text-section-blue-dark hover:scale-110 transition-transform"
@@ -207,7 +207,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab }) => {
             </a>
           </div>
           <p className="text-xs text-center text-primary-500 dark:text-primary-400">
-            © {new Date().getFullYear()} Your Name
+            © {new Date().getFullYear()} {siteConfig.copyright}
           </p>
         </div>
       </div>

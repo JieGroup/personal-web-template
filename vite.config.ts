@@ -4,21 +4,23 @@ import dotenv from 'dotenv';
 
 // Load environment variables based on mode
 export default defineConfig(({ mode }) => {
-  // Load the appropriate .env file based on the mode (e.g., .env.production, .env.development)
   dotenv.config({ path: `.env.${mode}` });
 
-  // Log the mode to debug during builds
   console.log('Vite mode:', mode);
 
-  // Extract API base URL from environment variables
   const apiBaseUrl = process.env.VITE_API_BASE_URL || 'http://localhost:5200';
-  console.log('apiBaseUrl:', process.env.VITE_API_BASE_URL);
+
+  // Set base path: use VITE_BASE_PATH env var, or '/' by default
+  // For GitHub Pages deployment set VITE_BASE_PATH=/personal-web-template/
+  const base = process.env.VITE_BASE_PATH || '/';
+
   return {
+    base,
     server: {
-      cors: true, // Enable CORS
-      host: '0.0.0.0', // Bind to all network interfaces
-      port: 5300, // Development server port
-      strictPort: true, // Ensure exact port usage or fail
+      cors: true,
+      host: '0.0.0.0',
+      port: 5300,
+      strictPort: true,
       hmr: {
         protocol: 'ws',
         host: '0.0.0.0',
@@ -28,17 +30,17 @@ export default defineConfig(({ mode }) => {
       },
       proxy: {
         '/api': {
-          target: apiBaseUrl, // Proxy API calls to the backend
+          target: apiBaseUrl,
           changeOrigin: true,
-          secure: false, // Disable SSL verification for local development
+          secure: false,
         },
       },
     },
     build: {
-      outDir: 'build', // Output directory for the production build
-      emptyOutDir: true, // Clear the output directory before building
-      sourcemap: mode === 'development', // Only generate sourcemaps in development
-      chunkSizeWarningLimit: 1000, // Increase chunk size warning limit for larger bundles
+      outDir: 'build',
+      emptyOutDir: true,
+      sourcemap: mode === 'development',
+      chunkSizeWarningLimit: 1000,
     },
     plugins: [react()],
   };

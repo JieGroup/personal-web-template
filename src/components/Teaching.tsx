@@ -24,12 +24,12 @@ const Teaching: React.FC = () => {
       title: 'Generative AI',
       description: `Coverage: This course will equip students with broad view on the recent AI landscape. The course will delve into a variety of topics outlined below, ensuring that students grasp both the algorithmic underpinnings and practical implementations: 1) Foundations of Deep Learning and Generative AI, 2) Evolution of Language Modeling, 3) Unpacking Transformer Models, 4) Training LLMs from scratch, 5) Diffusion Models, 6) Efficiency in Foundation Models' Training and Finetuning, 7) Deployment Strategies for Foundation Models, 8) Ethical Considerations in Generative AI, and 9) Adversarial Learning in Generative AI.
 
-I developed this course from scratch to provide students with an understanding of cutting-edge AI problems. Visit <link>https://your-course-website.example.com</link> for my open-source course materials.`,
+I developed this course from scratch to provide students with an understanding of cutting-edge AI problems. Visit <link>https://genai-course.jding.org</link> for my open-source course materials.`,
       audience: 'Ph.D. students in Stat, EE, and CS',
       years: ['2024'],
       isNew: true,
       nextOffering: '2025',
-      courseWebsite: 'https://your-course-website.example.com'
+      courseWebsite: 'https://genai-course.jding.org'
     },
     {
       code: 'PHY/AST/CSCI/STAT 8581',
