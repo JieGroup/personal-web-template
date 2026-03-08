@@ -211,7 +211,7 @@ I developed this course from scratch to provide students with an understanding o
           <div className="bg-white dark:bg-primary-900 rounded-lg shadow-xl w-full max-w-4xl h-[80vh] relative">
             <div className="h-full p-1">
               <object
-                data={`/assets/syllabi/${selectedSyllabus}.pdf`}
+                data={`${import.meta.env.BASE_URL}assets/syllabi/${selectedSyllabus}.pdf`}
                 type="application/pdf"
                 className="w-full h-full rounded"
               >
