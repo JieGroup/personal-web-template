@@ -4,7 +4,7 @@ const CV: React.FC = () => {
   return (
     <div className="h-[calc(100vh-8rem)]">
       <object
-        data="/assets/cv.pdf"
+        data={`${import.meta.env.BASE_URL}assets/cv.pdf`}
         type="application/pdf"
         className="w-full h-full rounded-lg shadow-lg"
       >
@@ -12,7 +12,7 @@ const CV: React.FC = () => {
           <p className="text-primary-700 dark:text-primary-300">
             Unable to display PDF. Please{' '}
             <a 
-              href="/assets/cv.pdf" 
+              href={`${import.meta.env.BASE_URL}assets/cv.pdf`} 
               className="text-highlight hover:text-highlight-hover underline"
               target="_blank"
               rel="noopener noreferrer"
