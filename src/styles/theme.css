@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --highlight-color: #3b82f6;
+  --highlight-hover: #2563eb;
+}
+
+.dark {
+  --highlight-color: #60a5fa;
+  --highlight-hover: #93c5fd;
+}
+
+.highlight {
+  color: var(--highlight-color);
+}
+
+.hover-highlight:hover {
+  color: var(--highlight-hover);
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+}
+
+.section-title {
+  @apply text-2xl font-bold mb-6;
+}
+
+.section-title-biography {
+  @apply text-section-blue-light dark:text-section-blue-dark;
+}
+
+.section-title-research {
+  @apply text-section-purple-light dark:text-section-purple-dark;
+}
+
+.section-title-honors {
+  @apply text-section-green-light dark:text-section-green-dark;
+}
+
+.section-title-acknowledgements {
+  @apply text-section-amber-light dark:text-section-amber-dark;
+}
+
+.award-box {
+  @apply bg-white dark:bg-primary-800 rounded-lg shadow-sm p-4 mb-4 transition-all hover:shadow-md;
+  @apply border border-primary-200 dark:border-primary-700;
+}
+
+.award-title {
+  @apply font-mono text-sm font-medium text-primary-700 dark:text-primary-300;
+}
+
+.award-year {
+  @apply font-mono text-sm text-primary-500 dark:text-primary-400;
+}

@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",        // or "ES2020", "ES2022", etc.
+    "module": "ESNext",        // must allow 'import.meta'
+    "moduleResolution": "node", // typical for Vite
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    
+    // other options...
+  },
+  "include": [
+    "src",
+    "env.d.ts"
+  ]
+}
