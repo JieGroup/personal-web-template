@@ -1,6 +1,8 @@
 import React from 'react';
 import { GraduationCap, BookOpen, Users, Globe, Briefcase } from 'lucide-react';
 
+const base = import.meta.env.BASE_URL;
+
 interface Student {
   name: string;
   department: string;
@@ -20,7 +22,7 @@ const Students: React.FC = () => {
       name: 'Xun Xian',
       department: 'Electrical Engineering',
       year: '2020-Present',
-      image: '/images/profile/students/xun-xian.png', // Updated to .png
+      image: `${base}images/profile/students/xun-xian.png`, // Updated to .png
       coAdvisor: 'Prof. Mingyi Hong',
       researchTopics: ['Deep Learning', 'AI Safety', 'Multi-Agent Systems'],
       homepage: 'https://jeremyxianx.github.io'
@@ -29,7 +31,7 @@ const Students: React.FC = () => {
       name: 'Qi Le',
       department: 'Computer Science',
       year: '2020-Present',
-      image: '/images/profile/students/qi-le.png',
+      image: `${base}images/profile/students/qi-le.png`,
       coAdvisor: 'Prof. Ali Anwar',
       researchTopics: ['Efficient LLM', 'Model Compression', 'Distributed Learning'],
       homepage: 'https://qi-le1.github.io/'
@@ -38,7 +40,7 @@ const Students: React.FC = () => {
       name: 'Jiaying Zhou',
       department: 'Statistics',
       year: '2021-Present',
-      image: '/images/profile/students/jiaying-zhou.png',
+      image: `${base}images/profile/students/jiaying-zhou.png`,
       coAdvisor: 'Prof. Yuhong Yang',
       researchTopics: ['Decentralized Learning', 'Data Privacy'],
       // homepage: 'https://www.linkedin.com/in/jiaying-zhou-9b4493161/'
@@ -48,7 +50,7 @@ const Students: React.FC = () => {
       name: 'Jin Du',
       department: 'Statistics',
       year: '2021-Present',
-      image: '/images/profile/students/jin-du.png',
+      image: `${base}images/profile/students/jin-du.png`,
       coAdvisor: 'Prof. Yuhong Yang',
       researchTopics: ['Large Language Models', 'Lifelong Learning', 'AI Agents', 'Statistical Theory'],
     },
@@ -56,7 +58,7 @@ const Students: React.FC = () => {
       name: 'An Luo',
       department: 'Statistics',
       year: '2022-Present',
-      image: '/images/profile/students/an-luo.png',
+      image: `${base}images/profile/students/an-luo.png`,
       researchTopics: ['Watermarking', 'AI Agents'],
       homepage: 'https://www.linkedin.com/in/an-luo-296868228/'
     },
@@ -64,7 +66,7 @@ const Students: React.FC = () => {
       name: 'Fangqiao Tian',
       department: 'Statistics',
       year: '2024-Present',
-      image: '/images/profile/students/fangqiao-tian.png',
+      image: `${base}images/profile/students/fangqiao-tian.png`,
       researchTopics: ['AI safety', 'Multi-Agent AI']
     },
   ];
@@ -74,7 +76,7 @@ const Students: React.FC = () => {
       name: 'Harsh Hemant Shah',
       department: 'Statistics',
       year: '2024-Present',
-      image: '/images/profile/students/harsh-shah.png',
+      image: `${base}images/profile/students/harsh-shah.png`,
       researchTopics: ['Multi-Agent AI', 'AI Agent']
     }
   ];
@@ -84,7 +86,7 @@ const Students: React.FC = () => {
       name: 'Ganghua Wang',
       department: 'Statistics',
       year: '2024',
-      image: '/images/profile/students/ganghua-wang.png', // Updated to .png
+      image: `${base}images/profile/students/ganghua-wang.png`, // Updated to .png
       thesis: 'Trustworthy AI in the Modern Era: Theories and Applications',
       firstPosition: 'Postdoctoral Researcher in Data Science at the University of Chicago',
       coAdvisor: 'Prof. Yuhong Yang',
@@ -96,7 +98,7 @@ const Students: React.FC = () => {
       name: 'Jiawei Zhang',
       department: 'Statistics',
       year: '2023',
-      image: '/images/profile/students/jiawei-zhang.png',
+      image: `${base}images/profile/students/jiawei-zhang.png`,
       thesis: 'Diagnostics, Cooperation, and Model Selection for Modern Machine Learning',
       firstPosition: 'Assistant Professor in Statistics at the University of Kentucky',
       coAdvisor: 'Prof. Yuhong Yang',
@@ -124,7 +126,7 @@ const Students: React.FC = () => {
       name: 'Yilin Hou',
       department: 'Statistics',
       year: '2020',
-      image: '/images/profile/students/yilin-hou.png',
+      image: `${base}images/profile/students/yilin-hou.png`,
       firstPosition: 'Senior Quantitative Anlayst at TD Bank',
       degree: 'M.S.',
       researchTopics: ['Smooth Change Points'],
