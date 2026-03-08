@@ -314,7 +314,7 @@ const Home: React.FC = () => {
             return (
               <img
                 key={sponsor}
-                src={`/images/sponsors/${sponsor.toUpperCase()}.png`}
+                src={`${import.meta.env.BASE_URL}images/sponsors/${sponsor.toUpperCase()}.png`}
                 alt={`${sponsor} logo`}
                 style={{ height }} // Apply dynamic height using inline styles
                 className="object-contain w-auto"
